@@ -4,6 +4,7 @@ public class TestFunction {
 	public static void main(String args[]) {
 		showHeader();
 		printEvenNos(50);
+		printEvenNos(20,50);
 		showFooter();
 	}
 
@@ -16,12 +17,20 @@ public class TestFunction {
 	}
 
 	public static void printEvenNos(int limit) {
-		for (int number = 0; number <=limit; number++) {
+		for (int number = 0; number <= limit; number++) {
 			if (number % 2 == 0) {
+
 				System.out.println(number);
+			}
+		}
+	}
+
+	public static void printEvenNos(int start, int end) {
+		for (int startno = start; startno <= end; startno++) {
+			if (startno % 2 == 0) {
+				System.out.println(startno);
 			}
 		}
 
 	}
-
 }
