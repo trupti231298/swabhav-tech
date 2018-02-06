@@ -4,17 +4,17 @@ public class TestArray2 {
 	public static void main(String args[]) {
 		int numbers[] = { 10, 20, 30, 40, 41 };
 		// int x,y;
-		arrsize(numbers);
-		nos(numbers);
-		evendig(numbers);
-		odddig(numbers);
+		displayArraysize(numbers);
+		displayArrayContents(numbers);
+		displayEvendigits(numbers);
+		display(numbers);
 	}
 
-	public static void arrsize(int numbers[]) {
+	public static void displayArraysize(int numbers[]) {
 		System.out.println("size:" + numbers.length);
 	}
 
-	public static void nos(int numbers[]) {
+	public static void displayArrayContents(int numbers[]) {
 		System.out.println("The no.s are:");
 		for (int position = 0; position < numbers.length; position++) {
 			System.out.print(numbers[position]);
@@ -26,7 +26,7 @@ public class TestArray2 {
 		System.out.println("");
 	}
 
-	public static void evendig(int numbers[]) {
+	public static void displayEvendigits(int numbers[]) {
 		int count = 0;
 		System.out.println("The no. of even digits are:");
 		for (int position = 0; position < numbers.length; position++) {
@@ -39,7 +39,7 @@ public class TestArray2 {
 		System.out.println(count);
 	}
 
-	public static void odddig(int numbers[]) {
+	public static void display(int numbers[]) {
 		int count = 0;
 		System.out.println("The no. of odd digits are:");
 		for (int position = 0; position < numbers.length; position++) {
